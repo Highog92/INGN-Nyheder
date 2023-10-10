@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,800&display=swap');
+
+body {
+    margin: 0;
+}
+
+/* ----------------------------------------------------------- */
+
+
+
+.navStyle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.29);
+    min-width: 100%;
+
+    div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    a {
+        padding: 10px;
+        color: #524641;
+        font-size: 18px;
+        font-family: Roboto Flex;
+        text-decoration: none;
+        // border-right: 1px solid;
+        // border-left: 1px solid;
+        font-size: 1.5rem;
+
+    }
+
+    a:hover {
+        color: #C52525;
+    }
+}
+
+
+.logo {
+    color: #C52525;
+    font-size: 54px;
+    font-family: Roboto Flex;
+    font-weight: 900;
+    margin: 0;
+    border-right: none;
+}
+
+/* ----------------------------------------------------------- */
+
+.footerStyle {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    justify-content: center;
+    margin: 2rem;
+
+    a {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+/* Media query for screens with a maximum width of 360px */
+@media (max-width: 360px) {
+
+
+    .footerStyle {
+        grid-template-columns: 1fr;
+    }
+}
