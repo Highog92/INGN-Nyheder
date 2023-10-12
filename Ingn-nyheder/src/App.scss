@@ -77,3 +77,27 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+/* ----------------------------------------------------------- */
+
+.login {
+    margin-left: 50px;
+
+    form, label {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    
+}
+/* ----------------------------------------------------------- */
+
+
+.NewsArticle{
+    width: 60%;
+    margin: 30px;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.29);
+    padding: 10px;
+    
+}

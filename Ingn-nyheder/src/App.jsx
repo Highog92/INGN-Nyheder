@@ -9,9 +9,14 @@ import { Samfund } from './Pages/Samfund';
 import { Sport } from './Pages/Sport';
 import { Teknologi } from './Pages/Teknologi';
 import { Udland } from './Pages/Udland';
+import { Login } from './Pages/Login/Login';
+// import { Signup } from './Pages/Login/Signup';
+
+// import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 
 function App() {
 
+ 
   return (
     <>
       <BrowserRouter>
@@ -24,6 +29,8 @@ function App() {
             <Route path="/sport" index element={<Sport title="Sport" />} />
             <Route path="/politik" index element={<Politik title="Politik" />} />
             <Route path="/samfund" index element={<Samfund title="Samfund" />} />
+            <Route path="/login" index element={<Login title="Login" />} />
+            {/* <Route path="/signup" index element={<Signup title="Signup" />} /> */}
           </Route>
         </Routes>
       </BrowserRouter>
