@@ -11,13 +11,13 @@ export const Login = () => {
         <section className='login'>
             <h2>Login (virker Ikke)</h2>
             <form>
-                <label>Brugernavn
+                <label>Brugernavn:
                     <input name="username"></input>
                 </label>
-                <label htmlFor="">Password
+                <label htmlFor="">Password:
                     <input type="password" name="password" />
                 </label>
-                <input type="submit" value="Send" />
+                <input type="submit" value="Log Ind"  className='logInBtn'/>
             </form>
         </section>
     )

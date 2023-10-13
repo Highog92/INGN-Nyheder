@@ -1,7 +1,7 @@
 import * as contentful from 'contentful'
 import { useEffect, useState } from 'react';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
-
+ 
 export function Alle() {
   const [data, setData] = useState()
 
@@ -20,19 +20,23 @@ export function Alle() {
 
   console.log(data);
 
+
   return (
+
     <section className='NewsArticle'>
       {data?.items.map((item, index) => {
 
         return (
-          <div key={index}>
+          <div className='articleCard' key={index}>
             <h1>{item.fields.title}</h1>
-            <p>D. {item.fields.dato} af {item.fields.lavetAf}</p>
-            <a>{item.fields.kategori}</a>
-            {/* <p>{item.fields.gallery}</p> */}
-            
-            {documentToReactComponents(item.fields.content)}
+            <details>
+              <summary>Læs mere</summary>
+              <p>D. {item.fields.dato} af {item.fields.lavetAf}</p>
+              <a>{item.fields.kategori}</a>
+              {documentToReactComponents(item.fields.content)}
+            </details>
 
+            {/* <p>{item.fields.gallery}</p> */}
           </div>
         )
       })}
